@@ -38,7 +38,7 @@ func main() {
 
 	// Get the posts thanks their id fetched above.
 	// Return a slice of Post type with a readable format in go or return an err if fail.
-	post, err := init.GetPostStory(codes)
+	posts, err := init.GetPostStory(codes)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -47,8 +47,8 @@ func main() {
 	// Iterate over the slice to get what we want.
 	// Here, get Title and Url of post.
 	// Note : Field are empty, if no data belong to them
-	for _, v := range post {
-		fmt.Printf("Title : %v // Url : %v\n", v.Title ,v.Url)
+	for _, post := range posts {
+		fmt.Printf("Title : %v // Url : %v\n", post.Title ,post.Url)
 	}
 
 }
