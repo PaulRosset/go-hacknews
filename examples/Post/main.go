@@ -21,12 +21,12 @@ func main() {
 
 	// Get the posts thanks their id fetched above.
 	// Return a slice of Post type with a readable format in go or return an err if fail.
-	post, err := init.GetPostStory(codes)
+	posts, err := init.GetPostStory(codes)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
 	// Give you an idea about the slice and the content returned by the method above.
-	fmt.Printf("%+v\n", post)
+	fmt.Printf("%+v\n", posts)
 }
