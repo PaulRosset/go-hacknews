@@ -1,28 +1,13 @@
-# go-hacknews
-Tiny SDK for HackerNews API written in go.
-
-[Official Hackernews API](https://github.com/HackerNews/API)
-
-## Install
-
-```
- go get github.com/PaulRosset/go-hacknews
-```
-
-## Usage
-
-Few examples are available inside the **examples/** folder.
-
-```go
 package main
 
 import (
-	    "fmt"
-	    "github.com/PaulRosset/go-hacknews"
+	"fmt"
+	"github.com/PaulRosset/go-hacknews"
 )
 
-func main() {
+// go run examples/TopStoryTitleUrl/main.go
 
+func main() {
 	// Init struct with the kind of story you want (topstories/newstories/beststories/askstories/showstories/jobstories) and the number of posts do you want to fetch.
 	init := hacknews.Initializer{"topstories", 10}
 
@@ -48,22 +33,6 @@ func main() {
 	for _, v := range post {
 		fmt.Printf("Title : %v // Url : %v\n", v.Title ,v.Url)
 	}
-
 }
 
 
-
-```
-
-## Test
-
-Tests are available :
-
-```
-$ cd test/
-$ go test
-```
-
-## License
-
-MIT
