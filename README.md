@@ -25,7 +25,7 @@ func main() {
 
 	// Init struct with the kind of story you want
 	// (topstories/newstories/beststories/askstories/showstories/jobstories)
-	// and the number of posts do you want to fetch.
+	// and the number of posts that you want to fetch.
 	init := hacknews.Initializer{"topstories", 10}
 
 	// Get the code of posts.
