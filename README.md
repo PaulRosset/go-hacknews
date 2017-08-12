@@ -11,12 +11,6 @@ Tiny utility Go client for HackerNews API.
 
 [Official Hackernews API](https://github.com/HackerNews/API)
 
-[GoDoc Hacknews Package](http://godoc.org/github.com/PaulRosset/go-hacknews)
-
-[Go ReportCard Package](https://goreportcard.com/report/github.com/PaulRosset/go-hacknews)
-
-[Go cover Package](https://cover.run/go/github.com/PaulRosset/go-hacknews)
-
 ## Install
 
 ```
