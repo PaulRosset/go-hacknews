@@ -31,6 +31,7 @@ type Post struct {
 	Descendants int `json:"descendants"`
 }
 
+// Return the ids of a story
 func (init Initializer) GetCodesStory() ([]int, error) {
 	resp, errFetch := http.Get("https://hacker-news.firebaseio.com/v0/" + init.Story + ".json?print=pretty")
 	if errFetch != nil {
@@ -49,6 +50,7 @@ func (init Initializer) GetCodesStory() ([]int, error) {
 	return jsonDecoded, nil
 }
 
+// Return the posts of story thanks their ids
 func (init Initializer) GetPostStory(codes []int) ([]Post, error) {
 	post := Post{}
 	myData := []Post{}
