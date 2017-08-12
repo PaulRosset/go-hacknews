@@ -45,7 +45,7 @@ func main() {
 	}
 
 	// Iterate over the slice to get what we want.
-	// Here, get Title and Url of post.
+	// Here, get Title and Url of post. But we can access all fields from the official hackernews api
 	// Note : Field are empty, if no data belong to them
 	for _, post := range posts {
 		fmt.Printf("Title : %v // Url : %v\n", post.Title ,post.Url)
