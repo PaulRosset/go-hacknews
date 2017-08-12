@@ -1,5 +1,5 @@
 # go-hacknews
-Tiny utility client for HackerNews API written in go.
+Tiny utility Go client for HackerNews API.
 
 [Official Hackernews API](https://github.com/HackerNews/API)
 
