@@ -1,7 +1,13 @@
-# go-hacknews
+# go-hacknews 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
+
+
 Tiny utility Go client for HackerNews API.
 
 [Official Hackernews API](https://github.com/HackerNews/API)
+
+[Go Doc Hacknews Package](http://godoc.org/github.com/PaulRosset/go-hacknews)
 
 ## Install
 

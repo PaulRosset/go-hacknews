@@ -34,5 +34,3 @@ func main() {
 		fmt.Printf("Title : %v // Url : %v\n", post.Title, post.Url)
 	}
 }
-
-
