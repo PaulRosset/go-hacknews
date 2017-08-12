@@ -8,13 +8,13 @@ import (
 	"strconv"
 )
 
-// Initializer represents the kind of requests that we want to fetch
+// Initializer -- represents the kind of requests that we want to fetch
 type Initializer struct {
 	Story   string
 	NbPosts int
 }
 
-// Post represents the json object returned by the API
+// Post -- represents the json object returned by the API
 type Post struct {
 	Id          int    `json:"id"`
 	Deleted     bool   `json:"deleted"`
@@ -33,7 +33,7 @@ type Post struct {
 	Descendants int    `json:"descendants"`
 }
 
-// Return the ids of a story
+// GetCodesStory -- Return the ids of a story
 func (init Initializer) GetCodesStory() ([]int, error) {
 	resp, errFetch := http.Get("https://hacker-news.firebaseio.com/v0/" + init.Story + ".json?print=pretty")
 	if errFetch != nil {
@@ -52,7 +52,7 @@ func (init Initializer) GetCodesStory() ([]int, error) {
 	return jsonDecoded, nil
 }
 
-// Return the posts of story thanks their ids
+// GetPostStory -- Return the posts of story thanks their ids
 func (init Initializer) GetPostStory(codes []int) ([]Post, error) {
 	post := Post{}
 	myData := []Post{}
