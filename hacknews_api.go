@@ -8,11 +8,13 @@ import (
 	"strconv"
 )
 
+// Initializer represents the kind of requests that we want to fetch
 type Initializer struct {
 	Story   string
 	NbPosts int
 }
 
+// Post represents the json object returned by the API
 type Post struct {
 	Id          int    `json:"id"`
 	Deleted     bool   `json:"deleted"`
