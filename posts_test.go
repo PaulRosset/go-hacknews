@@ -2,12 +2,10 @@ package hacknews
 
 import (
 	"testing"
-
-	"github.com/PaulRosset/go-hacknews"
 )
 
 func TestGetPostTopStories(t *testing.T) {
-	init := hacknews.Initializer{"topstories", 40}
+	init := Initializer{"topstories", 40}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
@@ -31,7 +29,7 @@ func TestGetPostTopStories(t *testing.T) {
 }
 
 func TestGetPostNewStories(t *testing.T) {
-	init := hacknews.Initializer{"newstories", 30}
+	init := Initializer{"newstories", 30}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
@@ -56,7 +54,7 @@ func TestGetPostNewStories(t *testing.T) {
 }
 
 func TestGetPostBestStories(t *testing.T) {
-	init := hacknews.Initializer{"beststories", 20}
+	init := Initializer{"beststories", 20}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
@@ -81,7 +79,7 @@ func TestGetPostBestStories(t *testing.T) {
 }
 
 func TestGetPostAskStories(t *testing.T) {
-	init := hacknews.Initializer{"askstories", 15}
+	init := Initializer{"askstories", 15}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
@@ -106,7 +104,7 @@ func TestGetPostAskStories(t *testing.T) {
 }
 
 func TestGetPostShowStories(t *testing.T) {
-	init := hacknews.Initializer{"showstories", 10}
+	init := Initializer{"showstories", 10}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
@@ -131,7 +129,7 @@ func TestGetPostShowStories(t *testing.T) {
 }
 
 func TestGetPostJobStories(t *testing.T) {
-	init := hacknews.Initializer{"jobstories", 5}
+	init := Initializer{"jobstories", 5}
 	codes, err := init.GetCodesStory()
 
 	if err != nil {
