@@ -1,8 +1,7 @@
 # go-hacknews 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/PaulRosset/go-hacknews)
 [![Go Report Card](https://goreportcard.com/badge/github.com/PaulRosset/go-hacknews)](https://goreportcard.com/report/github.com/PaulRosset/go-hacknews)
-![cover.run go](https://cover.run/go/github.com/PaulRosset/go-hacknews.svg)
+[![](https://cover.run/go/github.com/PaulRosset/go-hacknews.svg)](https://cover.run/go/github.com/PaulRosset/go-hacknews)
 [![](http://godoc.org/github.com/PaulRosset/go-hacknews?status.svg)](http://godoc.org/github.com/PaulRosset/go-hacknews)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
