@@ -1,12 +1,10 @@
 package hacknews
 
 import (
-	"github.com/PaulRosset/go-hacknews"
 	"testing"
-)
 
-// Inside the test/ folder
-// $ go test
+	"github.com/PaulRosset/go-hacknews"
+)
 
 func TestGetPostTopStories(t *testing.T) {
 	init := hacknews.Initializer{"topstories", 40}
