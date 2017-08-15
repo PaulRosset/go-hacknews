@@ -1,5 +1,6 @@
 # go-hacknews 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/avelino/awesome-go)
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/PaulRosset/go-hacknews)
 [![Go Report Card](https://goreportcard.com/badge/github.com/PaulRosset/go-hacknews)](https://goreportcard.com/report/github.com/PaulRosset/go-hacknews)
 [![](https://cover.run/go/github.com/PaulRosset/go-hacknews.svg)](https://cover.run/go/github.com/PaulRosset/go-hacknews)
@@ -70,7 +71,6 @@ func main() {
 Tests are available :
 
 ```
-$ cd test/
 $ go test
 ```
 
